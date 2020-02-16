@@ -1,53 +1,23 @@
 import React from "react";
-import "./style.css"
-import React from 'react';
-import logo from './logo.svg';
+import MyComponent from './MyComponent'
+import MyComponent1 from './kp1'
+import MyComponent2 from './kp2'
+import MyComponent3 from './kp3'
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+function App(){
+return(
+<div className="APP">
+<MyComponent />
+<MyComponent1 />
+<MyComponent2 />
+<MyComponent3 />
 
-
-
-        <div style={{
-  border:'solid 1px black' ,
-   maxWidth:'100vw'
-   }}>
-
-<h1 className={{title , red}}>My title</h1>
-
-<br/>
-
-<img src="/twice.jpg" />
-
-<br/>
-
-<img src='/exo.webp' />
-
-
-    </div>
-  );
+</div>
+);
 }
-      </header>
-    </div>
-  );
-}
-
-
+export default App; 
 
 
 
